@@ -1,8 +1,0 @@
-name: idenv
-channels:
-  - conda-forge
-dependencies:
-  - python=3.12
-  - pip:
-    - azure-ai-ml==1.34.0
-    - azure-identity==1.25.3

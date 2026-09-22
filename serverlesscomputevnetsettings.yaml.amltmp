@@ -1,6 +1,0 @@
-serverless_compute:
-    # Supply subnet ARM ID where serverless computes should be created
-    custom_subnet: /subscriptions/69-----------------------------------03/resourceGroups/vnets-rg/providers/Microsoft.Network/virtualNetworks/eus2vnet4324/subnets/default
-    # Set true, if serverless computes should have just private IP
-    # Set false, if serverless computes can have both public and private IP mapped
-    no_public_ip: false
