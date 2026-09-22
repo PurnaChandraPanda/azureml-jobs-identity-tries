@@ -12,13 +12,7 @@ The validation compares:
 - Operating-system process identity and Microsoft Entra token identity
 - Azure ML output persistence through the registered `workspaceblobstore` datastore
 
-The primary remote compute target used by this sample is:
-
-```text
-cpu-cluster
-```
-
-# Pre-requisites
+## Pre-requisites
 
 - Create a UAI for compute instance use.
 - Grant UAI the `File Previleged Data Contributor` role on Storage account.
@@ -27,7 +21,7 @@ cpu-cluster
 - Create another compute cluster with another UAI or SAI mapped.
 - Set the `workspaceblobstore` datastore with auth type as None. This is a way to ensure caller ID is preferred to reach backend storage here.
 
-# Prepare serverless computes infra
+## Prepare serverless computes infra
 
 - Update the `serverlesscomputevnetsettings.yaml` if you are in vnet to allow serverless computes onboarding in user vnet.
 
@@ -122,7 +116,7 @@ az ml environment create \
 
 It will immediately start `register env -> build env`. Wait for the build to be over in some 20minutes and then start ML job runs.
 
-# How to run jobs?
+## How to run jobs?
 
 Update `run_tests.sh` user configuration values.
 
